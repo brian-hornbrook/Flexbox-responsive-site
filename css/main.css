@@ -1,0 +1,187 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.container{
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 30px;
+}
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 12px;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+/*The widths are in a percentage!*/
+header {
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	padding: 50px 0 15px;
+}
+
+header h1 {
+	margin: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+header h1 span {
+	color: #77a466;
+	margin-right: 5px;
+}
+
+header nav {
+	padding: 20px;
+	width: 100%;
+	border-top: 3px solid #77a466;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: column nowrap;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 10px 10px;
+	display: flex;
+	justify-content: center;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.main-image {
+	height: auto;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 16px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	height: auto;
+	border-top: 1px solid #eee;
+}
+
+.section-one h3 {
+	padding: 10px 0;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 14px;
+}
+
+/***** TABLET *****/
+@media (min-width: 768px) {
+	.bottom-section {
+		display: flex;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 30%;
+		padding: 0 20px;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+}
+
+/***** DESKTOP *****/
+@media (min-width: 1200px) {
+	header {
+		flex-flow: row nowrap;
+		padding: 50px 0 0 0;
+	}
+
+	header h1 {
+		align-items: center;
+	}
+
+	header nav {
+		border: none;
+	}
+
+	header nav ul {
+		flex-flow: row wrap;
+	}
+}
